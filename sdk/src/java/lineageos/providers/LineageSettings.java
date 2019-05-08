@@ -2102,6 +2102,15 @@ public final class LineageSettings {
         public static final Validator STATUS_BAR_LOGO_VALIDATOR = sBooleanValidator;
 
         /**
+         * Three Finger Gesture
+         * @hide
+         */
+        public static final String SWIPE_TO_SCREENSHOT = "swipe_to_screenshot";
+
+        /** @hide **/
+        public static final Validator SWIPE_TO_SCREENSHOT_VALIDATOR = sBooleanValidator;
+
+        /**
          * Mapping of validators for all system settings.  This map is used to validate both valid
          * keys as well as validating the values for those keys.
          *
@@ -2264,6 +2273,7 @@ public final class LineageSettings {
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
                     __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_LOGO, STATUS_BAR_LOGO_VALIDATOR);
+            VALIDATORS.put(SWIPE_TO_SCREENSHOT, SWIPE_TO_SCREENSHOT_VALIDATOR);
         };
         // endregion
     }
